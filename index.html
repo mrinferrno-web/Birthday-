@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 🎉</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
+
+<div class="container">
+  <h1 class="title">Happy Birthday 🎂</h1>
+  
+  <p>To <span id="name" contenteditable="true">[Enter Name]</span> 💖</p>
+  
+  <div class="photos">
+    <img src="https://via.placeholder.com/150" alt="Photo 1">
+    <img src="https://via.placeholder.com/150" alt="Photo 2">
+  </div>
+  
+  <div class="cake">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="candle"></div>
+    <div class="candle"></div>
+    <div class="candle"></div>
+  </div>
+  
+  <textarea id="message" placeholder="Write your birthday message here..."></textarea>
+  
+  <button onclick="startBirthday()">Tap for Surprise 🎊</button>
+
+  <div id="messageDisplay" class="message-display"></div>
+</div>
+
+<canvas id="confetti"></canvas>
+<div id="balloons"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
